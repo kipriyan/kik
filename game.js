@@ -4,7 +4,7 @@ var X = 15, Y = 15;
 var s = 20, cs = 30;
 var grid = [], dist = [];
 var colors = ["green", "cyan"];
-var t=0, hasToMove=0,X=15,Y=15;
+var t=0, hasToMove=0,X=17,Y=18;
 var bulletX = [], bulletY = [],lX=900,lY=700, coints = 3,heroX=2*cs,heroY=2*cs,kX=0,kY=0,q=0,j=0,p=0;
  luk=new Image();
  luk.src="hero.bmp";
@@ -78,11 +78,13 @@ function update() {
  //} 
    // }
     for(var i=0;i<X;i=i+1){
-    if(myX[i]==15 && myY[i]==15){
+    if(myX[i]==17 && myY[i]==18){
      //   console.log("lol");
         lX=0;
       lY=0;
         q=0;
+        coints=0;
+        
     }
     }
    // }
