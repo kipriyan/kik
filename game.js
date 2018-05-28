@@ -6,7 +6,7 @@ var s = 20, cs = 30;
 var grid = [], dist = [];
 var colors = ["green", "cyan"];
 var t=0, hasToMove=0,X=17,Y=18;
-var bulletX = [], bulletY = [],lX=900,lY=700, coints = 3,heroX=2*cs,heroY=2*cs,kX=0,kY=0,q=0,j=0,p=0;
+var bulletX = [], bulletY = [],lX=900,lY=700, coints = 10,heroX=2*cs,heroY=2*cs,kX=0,kY=0,q=0,j=0,p=0;
  luk=new Image();
  luk.src="hero.bmp";
  kuk=new Image();
@@ -119,7 +119,7 @@ function update() {
         for (let i=0; i<myX.length; ++i){
             if(dist[myX[i]][myY[i]]==0){
                 --health[i];
-                ++coints;
+               // ++coints;
              }else{
                 if (myX[i]>0 && dist[myX[i]-1][myY[i]] == dist[myX[i]][myY[i]]-1){--myX[i];}
                 else if (myX[i]<s-1 && dist[myX[i]+1][myY[i]] == dist[myX[i]][myY[i]]-1){++myX[i];}
@@ -144,15 +144,15 @@ function update() {
             --health[ind];
             if (health[ind]<=0){
                 del(ind);
-                coints=coints+1;
+               // coints=coints+1;
               ++q;
             }
         }
     }
     ++t;
-    if(coints>=3 && t>=950){
-        coints=2;
-    }
+   // if(coints>=3 && t>=950){
+   //     coints=2;
+  //  }
    
     if (isKeyPressed[32]){
            myX[i]="NaN";
