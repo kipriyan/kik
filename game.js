@@ -1,3 +1,4 @@
+
 // Creating variables
 var myX = [], myY = [], health = [];
 var X = 15, Y = 15;
@@ -206,7 +207,7 @@ function keyup(key) {
      if(key==87){
       heroY=heroY-30;  
     }
-     //console.log("Pressed", key);
+     console.log("Pressed", key);
     
 };
  
