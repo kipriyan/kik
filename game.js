@@ -5,7 +5,7 @@ var s = 20, cs = 30;
 var grid = [], dist = [];
 var colors = ["green", "cyan"];
 var t=0, hasToMove=0,X=15,Y=15;
-var bulletX = [], bulletY = [],lX=900,lY=700, coints = 3,heroX=2*cs,heroY=2*cs,kX=0,kY=0,q=0;
+var bulletX = [], bulletY = [],lX=900,lY=700, coints = 3,heroX=2*cs,heroY=2*cs,kX=0,kY=0,q=0,j=0;
  luk=new Image();
  luk.src="hero.bmp";
  kuk=new Image();
@@ -161,7 +161,7 @@ function update() {
  
 function draw() {
     context.fillStyle = "green";
-context.fillRect(kX,kY,800,600);
+context.fillRect(kX,kY,600,600);
     for (let i=0; i<s; ++i){
         for (let j=0; j<s; ++j){
             context.fillStyle = colors[grid[i][j]];
@@ -187,7 +187,7 @@ context.fillRect(kX,kY,800,600);
     context.font="50px Times New Roman"
         context.fillText(q,500,500);
         if(q>=100){
-   context.fillRect(q,q,800,600);
+   context.fillRect(j,j,800,600);
     }
 };
  
